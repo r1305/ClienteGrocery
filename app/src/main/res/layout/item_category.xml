@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    app:ignore="NamespaceTypo">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="12dp"
+            android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app1:cardBackgroundColor="@color/extra"
+            app1:cardCornerRadius="10dp"
+            app1:cardElevation="0dp">
+
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center|top"
+                android:background="?android:attr/selectableItemBackground"
+
+                android:scaleType="matrix" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:gravity="center"
+
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+
+                android:text="MICROFONOS Y  CONDENSADORES"
+                android:textColor="@color/colorblack"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+
+
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

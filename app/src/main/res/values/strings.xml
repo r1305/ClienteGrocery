@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">VENTAS ELYON</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="sing">Regístrate</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="spinner_title">Seleccionar área</string>
+
+    <string name="pic_myslf">Recogere el producto</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_notification_channel_id">5</string>
+    <string name="fcm_message">Testing</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="titulo">Informacion de tarjeta</string>
+    <string name="numeroTarjeta">No. Tarjeta</string>
+    <string name="nombre">Nombre</string>
+    <string name="mes">mes</string>
+    <string name="anio">anio</string>
+    <string name="cvv">CVV</string>
+    <string name="scan">Pagar</string>
+    <string name="guardar">Guardar</string>
+    <string name="faltancampos">Faltan campos requeridos</string>
+
+    <string name="base_url">https://aplicaciones.aply.com.pe/connection/app/app_delivery/pedido/</string>
+    <string name="pagoCulqi">pagoCulqi.php</string>
+
+</resources>

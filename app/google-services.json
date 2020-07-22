@@ -1,0 +1,109 @@
+{
+  "project_info": {
+    "project_number": "835565575795",
+    "firebase_url": "https://ventas-elyon.firebaseio.com",
+    "project_id": "ventas-elyon",
+    "storage_bucket": "ventas-elyon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835565575795:android:a1820cb68f6dafa67dd406",
+        "android_client_info": {
+          "package_name": "com.recursoscstore.elyonconductor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835565575795-ss7e0gv4v3dcceapuokqfpqt8gmbj2iu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.recursoscstore.elyonconductor",
+            "certificate_hash": "15ba26a33fb66bc82c4fbf05b35a43b4687dbed4"
+          }
+        },
+        {
+          "client_id": "835565575795-d9ob0hkp3iob4irh66hfbc4r9cfjl2ev.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.recursoscstore.elyonconductor",
+            "certificate_hash": "8cd7b30a24d2a41a0963e90f5f8e41a65df98737"
+          }
+        },
+        {
+          "client_id": "835565575795-6laau8vf1no14ia9nkinrni5gl9oucnk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-yai_L7IUdAwRz-YOGWlnGgW3ceYM9U4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835565575795-6laau8vf1no14ia9nkinrni5gl9oucnk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835565575795:android:87d7e61a7b810dd27dd406",
+        "android_client_info": {
+          "package_name": "com.recursoscstore.ventaselyon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835565575795-3aovmn6p789s7bute18bt0rpguvgi7uu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.recursoscstore.ventaselyon",
+            "certificate_hash": "127398af5e19652eab648ecf3b8d874ed00d8bb8"
+          }
+        },
+        {
+          "client_id": "835565575795-d204pncr3h5pavcmihe9guue461ugi08.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.recursoscstore.ventaselyon",
+            "certificate_hash": "15ba26a33fb66bc82c4fbf05b35a43b4687dbed4"
+          }
+        },
+        {
+          "client_id": "835565575795-tmso16vggme7qaf2ju7tkgu920p1hcs2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.recursoscstore.ventaselyon",
+            "certificate_hash": "8cd7b30a24d2a41a0963e90f5f8e41a65df98737"
+          }
+        },
+        {
+          "client_id": "835565575795-6laau8vf1no14ia9nkinrni5gl9oucnk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-yai_L7IUdAwRz-YOGWlnGgW3ceYM9U4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835565575795-6laau8vf1no14ia9nkinrni5gl9oucnk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
