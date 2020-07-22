@@ -137,7 +137,7 @@ public class ItemListFragment extends Fragment implements GetResult.MyListener {
                     totalItem = totalItem + Integer.parseInt(res.getString(6));
                     totalRs = totalRs + temp;
                 }
-
+                Log.e("updated_item","true");
                 txtItem.setText(totalItem + " Artículos");
                 txtPrice.setText(sessionManager.getStringData(CURRUNCY) + totalRs);
             }

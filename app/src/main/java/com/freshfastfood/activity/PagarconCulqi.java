@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
@@ -20,8 +21,10 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.freshfastfood.Culqi.Culqi;
 import com.freshfastfood.R;
 import com.freshfastfood.Validation.Validation;
+import com.google.gson.Gson;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -108,6 +111,7 @@ public class PagarconCulqi extends AppCompatActivity {
         txtyear.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                txtyear.setBackgroundResource(R.drawable.border);
             }
 
             @Override
@@ -128,6 +132,7 @@ public class PagarconCulqi extends AppCompatActivity {
         txtmonth.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                txtmonth.setBackgroundResource(R.drawable.border);
             }
 
             @Override
@@ -176,7 +181,12 @@ public class PagarconCulqi extends AppCompatActivity {
                         try {
                             result.setText(response);
                             progress.dismiss();
-                            System.out.println(response);
+                            Culqi culqi = new Gson().fromJson(response,Culqi.class);
+                            if(culqi.getObject().equals("charge")){
+                                PagarconCulqi.this.finish();
+                            }else{
+                                Toast.makeText(ctx,culqi.getUser_message(),Toast.LENGTH_SHORT).show();
+                            }
                         } catch (Exception e) {
                             e.printStackTrace();
                             System.out.println("sendToken_error: " + e.getMessage());

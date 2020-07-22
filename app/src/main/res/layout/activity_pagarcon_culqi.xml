@@ -16,34 +16,32 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
+        android:inputType="textCapWords"
         android:ems="10"
         android:background="@drawable/border"
         android:id="@+id/txt_nombre_Card"
         android:hint="Nombre"
         android:layout_marginTop="27dp"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <EditText
+        android:nextFocusDown="@id/txt_nombre_Card"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
+        android:inputType="textCapWords"
         android:ems="10"
         android:background="@drawable/border"
         android:id="@+id/txt_apellido_card"
         android:hint="Apellidos"
         android:layout_marginTop="27dp"
         android:layout_below="@+id/txt_nombre_Card"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
 
     <EditText
+        android:nextFocusDown="@id/txt_apellido_card"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
@@ -63,6 +61,7 @@
         android:layout_alignParentStart="true" />
 
     <EditText
+        android:nextFocusDown="@id/txt_cardnumber"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:inputType="number"
@@ -73,13 +72,13 @@
         android:background="@drawable/border"
         android:layout_row="2"
         android:layout_column="0"
-
         android:layout_marginTop="19dp"
         android:layout_below="@+id/txt_cardnumber"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <EditText
+        android:nextFocusRight="@id/txt_month"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:inputType="number"
@@ -98,6 +97,7 @@
         android:layout_marginStart="14dp" />
 
     <EditText
+        android:nextFocusDown="@id/txt_year"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:inputType="number"
@@ -112,27 +112,13 @@
         android:layout_alignParentEnd="true"
         android:hint="CVV" />
 
-    <Button
-        android:id="@+id/btn_payy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="14"
-        android:layout_column="0"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="22dp"
-        android:layout_marginLeft="22dp"
-        android:layout_marginTop="411dp"
-        android:text="Crear Token" />
-
     <EditText
+        android:id="@+id/txt_emaill"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
         android:background="@drawable/border"
-        android:id="@+id/txt_emaill"
         android:hint="Correo electronico"
         android:layout_marginTop="27dp"
         android:layout_below="@+id/txt_month"
@@ -141,11 +127,34 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
+    <LinearLayout
+        android:id="@+id/linear_pay"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/txt_emaill">
+        <Button
+            android:id="@+id/btn_payy"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_green2"
+
+            android:text="Pagar"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            />
+    </LinearLayout>
+
+
+
+
     <TextView
         android:id="@+id/kind_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_payy"
+        android:layout_below="@+id/linear_pay"
         android:layout_marginTop="19dp"
         android:textSize="18sp" />
 
@@ -155,7 +164,7 @@
         android:id="@+id/token_id"
         android:textSize="18sp"
         android:textColor="@color/colorblack"
-        android:layout_below="@+id/btn_payy"
+        android:layout_below="@+id/linear_pay"
         android:layout_marginTop="19dp" />
 
 

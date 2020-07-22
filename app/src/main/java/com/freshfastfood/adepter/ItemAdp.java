@@ -180,6 +180,7 @@ public class ItemAdp extends RecyclerView.Adapter<ItemAdp.ViewHolder> {
             public void onClick(View v) {
 
                 count[0] = Integer.parseInt(txtcount.getText().toString());
+                Log.e("minus_count",count[0]+"");
 
                 count[0] = count[0] - 1;
                 if (count[0] <= 0) {
@@ -201,6 +202,9 @@ public class ItemAdp extends RecyclerView.Adapter<ItemAdp.ViewHolder> {
             @Override
             public void onClick(View v) {
                 count[0] = Integer.parseInt(txtcount.getText().toString());
+                Log.e("plus_count",count[0]+"");
+                Log.e("plus_count",txtcount.getText().toString());
+
                 count[0] = count[0] + 1;
                 if (count[0] <= 0) {
                     txtcount.setText("" + count[0]);
