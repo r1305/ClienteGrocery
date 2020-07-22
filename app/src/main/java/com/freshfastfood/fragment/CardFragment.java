@@ -170,14 +170,29 @@ public class CardFragment extends Fragment {
                 img_plus.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        txtcount.setVisibility(View.VISIBLE);
-                        img_mins.setVisibility(View.VISIBLE);
                         count[0] = Integer.parseInt(txtcount.getText().toString());
-                        totalAmount[0] = totalAmount[0] + Integer.parseInt(myCart.getCost());
                         count[0] = count[0] + 1;
-                        txtcount.setText("" + count[0]);
-                        myCart.setQty(String.valueOf(count[0]));
-                        updateItem();
+                        if (count[0] <= 0) {
+                            txtcount.setVisibility(View.INVISIBLE);
+                            img_mins.setVisibility(View.INVISIBLE);
+                            txtcount.setText("" + count[0]);
+                            helper.deleteRData(myCart.getPID(), myCart.getCost());
+                            lnrView.removeView(view);
+                            myCarts.remove(cart);
+                            totalAmount[0] = totalAmount[0] - Integer.parseInt(myCart.getCost());
+                            Toast.makeText(getActivity(), "" + myCart.getTitle() + " " + myCart.getWeight() + " ha sido Eliminado", Toast.LENGTH_LONG).show();
+                            if (totalAmount[0] == 0) {
+                                txtCountinue.setVisibility(View.GONE);
+                            }
+                            updateItem();
+                        } else {
+                            txtcount.setVisibility(View.VISIBLE);
+                            txtcount.setText("" + count[0]);
+                            myCart.setQty(String.valueOf(count[0]));
+                            totalAmount[0] = totalAmount[0] - Integer.parseInt(myCart.getCost());
+                            helper.insertData(myCart);
+                            updateItem();
+                        }
                     }
                 });
                 img_delete.setOnClickListener(new View.OnClickListener() {

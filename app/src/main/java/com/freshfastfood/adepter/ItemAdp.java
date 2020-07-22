@@ -202,9 +202,17 @@ public class ItemAdp extends RecyclerView.Adapter<ItemAdp.ViewHolder> {
             public void onClick(View v) {
                 count[0] = Integer.parseInt(txtcount.getText().toString());
                 count[0] = count[0] + 1;
-                txtcount.setText("" + count[0]);
-                myCart.setQty(String.valueOf(count[0]));
-                Log.e("INsert", "--> " + helper.insertData(myCart));
+                if (count[0] <= 0) {
+                    txtcount.setText("" + count[0]);
+                    lvl_addremove.setVisibility(View.GONE);
+                    lvl_addcart.setVisibility(View.VISIBLE);
+                    helper.deleteRData(myCart.getPID(), myCart.getCost());
+                } else {
+                    txtcount.setVisibility(View.VISIBLE);
+                    txtcount.setText("" + count[0]);
+                    myCart.setQty(String.valueOf(count[0]));
+                    helper.insertData(myCart);
+                }
                 itemListFragment.updateItem();
             }
         });
