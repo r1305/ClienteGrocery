@@ -14,7 +14,7 @@
 
 
     <EditText
-        android:nextFocusForward="@id/txt_apellido_card"
+        android:imeOptions="actionNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textCapWords"
@@ -27,7 +27,7 @@
         android:layout_alignParentEnd="true" />
 
     <EditText
-        android:nextFocusForward="@id/txt_cardnumber"
+        android:imeOptions="actionNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textCapWords"
@@ -42,7 +42,7 @@
 
 
     <EditText
-        android:nextFocusForward="@id/txt_month"
+        android:imeOptions="actionNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
@@ -62,7 +62,7 @@
         android:layout_alignParentStart="true" />
 
     <EditText
-        android:nextFocusDown="@id/txt_year"
+        android:imeOptions="actionNext"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:inputType="number"
@@ -79,7 +79,7 @@
         android:layout_alignParentStart="true" />
 
     <EditText
-        android:nextFocusDown="@id/txt_cvv"
+        android:imeOptions="actionNext"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:inputType="number"
@@ -98,22 +98,26 @@
         android:layout_marginStart="14dp" />
 
     <EditText
-        android:nextFocusRight="@id/txt_emaill"
+        android:imeOptions="actionNext"
+        android:id="@+id/txt_cvv"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/txt_cvv"
-        android:background="@drawable/border"
         android:layout_alignBottom="@+id/txt_year"
-        android:layout_toRightOf="@+id/txt_year"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:hint="CVV" />
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toRightOf="@+id/txt_year"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="CVV"
+        android:inputType="number" />
 
     <EditText
+        android:imeOptions="actionDone"
         android:id="@+id/txt_emaill"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

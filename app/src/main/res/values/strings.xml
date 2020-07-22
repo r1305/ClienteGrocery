@@ -27,7 +27,8 @@
     <string name="guardar">Guardar</string>
     <string name="faltancampos">Faltan campos requeridos</string>
 
-    <string name="base_url">https://aplicaciones.aply.com.pe/connection/app/app_delivery/pedido/</string>
+<!--    <string name="base_url">https://aplicaciones.aply.com.pe/connection/app/app_delivery/pedido/</string>-->
+    <string name="base_url">https://recursoscstore.aply.com.pe/</string>
     <string name="pagoCulqi">pagoCulqi.php</string>
 
 </resources>

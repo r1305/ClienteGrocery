@@ -178,6 +178,7 @@ public class PagarconCulqi extends AppCompatActivity {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
+                        System.out.println("culqi_response"+response);
                         try {
                             result.setText(response);
                             progress.dismiss();
