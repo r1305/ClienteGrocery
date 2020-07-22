@@ -14,6 +14,7 @@
 
 
     <EditText
+        android:nextFocusForward="@id/txt_apellido_card"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textCapWords"
@@ -26,7 +27,7 @@
         android:layout_alignParentEnd="true" />
 
     <EditText
-        android:nextFocusDown="@id/txt_nombre_Card"
+        android:nextFocusForward="@id/txt_cardnumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textCapWords"
@@ -41,7 +42,7 @@
 
 
     <EditText
-        android:nextFocusDown="@id/txt_apellido_card"
+        android:nextFocusForward="@id/txt_month"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
@@ -61,7 +62,7 @@
         android:layout_alignParentStart="true" />
 
     <EditText
-        android:nextFocusDown="@id/txt_cardnumber"
+        android:nextFocusDown="@id/txt_year"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:inputType="number"
@@ -78,7 +79,7 @@
         android:layout_alignParentStart="true" />
 
     <EditText
-        android:nextFocusRight="@id/txt_month"
+        android:nextFocusDown="@id/txt_cvv"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:inputType="number"
@@ -97,7 +98,7 @@
         android:layout_marginStart="14dp" />
 
     <EditText
-        android:nextFocusDown="@id/txt_year"
+        android:nextFocusRight="@id/txt_emaill"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:inputType="number"
